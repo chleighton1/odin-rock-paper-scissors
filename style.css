@@ -1,0 +1,92 @@
+/* Reset the box model + Borders */
+
+* {
+  box-sizing: border-box;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+  /* Disable the text inflation algorithm */
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+}
+
+/* Force images to behave */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Reset (most) lists */
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+  list-style: none;
+}
+
+menu,
+ol,
+ul {
+  padding-left: 0;
+}
+
+article ol,
+article ul {
+  list-style-position: inside;
+}
+
+/* Provide interactive elements with a cursor */
+
+label,
+button,
+select,
+summary,
+[type="radio"],
+[type="submit"],
+[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Enable smooth scrolling */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.titleCard {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+
+.rps-div {
+  margin: 0 auto;
+  width: 30%;
+  padding: 3rem 0;
+  text-align: center;
+  border: 1px red solid;
+}
+
+.rps-play {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 4rem 2rem 4rem;
+  padding: 1rem;
+  border: 2px blue dotted;
+}
+
+button {
+  font-weight: 600;
+  border: 1px green solid;
+}
+
+.scoreCard {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
